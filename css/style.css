@@ -1,0 +1,216 @@
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	background: hsl(225, 100%, 94%);
+	margin: 0;
+}
+
+footer {
+	font-size: 30%;
+}
+
+.main {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	border-radius: 1.5rem;
+	margin: 0 auto;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.sub {
+	line-height: 140%;
+}
+
+.hero {
+	border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+}
+
+.pay {
+	text-decoration: none;
+	background: hsl(245, 75%, 52%);
+	color: #fff;
+	border-radius: .5rem;
+	cursor: pointer;
+}
+
+.order {
+	text-decoration: none;
+	color: hsl(224, 23%, 55%);
+	cursor: pointer;
+}
+
+.change {
+	cursor: pointer;
+	color: hsl(245, 75%, 52%);
+}
+
+a {
+	font-weight: 700;
+}
+
+p {
+	color: hsl(224, 23%, 55%);
+	font-weight: 500;
+}
+
+h1 {
+	color: hsl(223, 47%, 23%);
+	font-weight: 900;
+
+}
+
+h2 {
+	color: hsl(223, 47%, 23%);
+	font-weight: 900;
+	margin-bottom: 0.3rem;
+}
+
+.price {
+	margin-top: .3rem;
+}
+
+.change:hover {
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+.order:hover {
+	color: hsl(223, 47%, 23%);
+}
+
+.pay:hover {
+	opacity: 0.7;
+}
+
+@media screen and (min-width: 280px) {
+	.main {
+		width: 330px;
+		margin-top: 3rem;
+	}
+
+	.hero {
+		width: 330px;
+		height: auto;
+	}
+
+	body {
+		background-image: url('../images/pattern-background-mobile.svg');
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	}
+
+	.pad {
+		padding: 2rem 2rem 1rem 2rem;
+	}
+
+	header {
+		font-size: 90%;
+	}
+
+	h1 {
+		font-size: 160%;
+	}
+
+	.buttons {
+		font-size: 90%;
+	}
+
+	.flex {
+		font-size: 80%;
+		padding: 1.5rem 1rem;
+	}
+
+	.note {
+		width: 45px;
+		height: auto;
+	}
+
+	h2 {
+		font-size: 115%;
+	}
+
+	.pbox {
+		margin-left: -1.8rem;
+	}
+
+	.pay {
+		padding: 1rem 0;
+	}
+
+	.order {
+		padding: 1rem 0;
+	}
+
+}
+
+@media screen and (min-width: 900px) {
+	.main {
+		width: 450px;
+		margin: 5rem auto 5rem auto;
+	}
+
+	body {
+		background-image: url('../images/pattern-background-desktop.svg');
+		margin-bottom: -25rem;
+	}
+
+	.hero {
+		width: 450px;
+	}
+
+	header {
+        font-size: 120%;
+	}
+
+	.note {
+		width: 55px;
+	}
+
+	.flex {
+		font-size: 110%;
+	}
+
+	.pbox {
+		margin-left: -3.5rem;
+	}
+
+	.pad {
+		padding: 3rem 3rem 2rem 3rem;
+	}
+
+	h2 {
+		font-size: 110%;
+	}
+
+	.buttons {
+		font-size: 95%;
+	}
+
+	.order {
+		margin-top: .5rem;
+	}
+}
